@@ -1,0 +1,17 @@
+<html>
+    <body>
+
+        <head>
+            <title>Lista de tarefas | Usandp nodemon e ejs</title>
+            <link href="/public/style.css" rel="stylesheet" />
+        </head>
+        <div class="tarefas">
+            <% for(let i = 0; i < tarefasList.length; i++){ %>
+
+                <p><%= tarefasList[i] %> | <a href="/deletar/<%= i %>">X</a></p> 
+
+            <% } %>
+        </div>
+        <script> console.log("test")</script>
+    </body>
+</html>
